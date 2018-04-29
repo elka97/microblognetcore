@@ -1,0 +1,11 @@
+C:\Projects\PendoBlog\PendoBlog\bin\Debug\netcoreapp2.0\PendoBlog.deps.json
+C:\Projects\PendoBlog\PendoBlog\bin\Debug\netcoreapp2.0\PendoBlog.runtimeconfig.json
+C:\Projects\PendoBlog\PendoBlog\bin\Debug\netcoreapp2.0\PendoBlog.runtimeconfig.dev.json
+C:\Projects\PendoBlog\PendoBlog\bin\Debug\netcoreapp2.0\PendoBlog.dll
+C:\Projects\PendoBlog\PendoBlog\obj\Debug\netcoreapp2.0\PendoBlog.csprojResolveAssemblyReference.cache
+C:\Projects\PendoBlog\PendoBlog\obj\Debug\netcoreapp2.0\PendoBlog.csproj.CoreCompileInputs.cache
+C:\Projects\PendoBlog\PendoBlog\obj\Debug\netcoreapp2.0\PendoBlog.AssemblyInfoInputs.cache
+C:\Projects\PendoBlog\PendoBlog\obj\Debug\netcoreapp2.0\PendoBlog.AssemblyInfo.cs
+C:\Projects\PendoBlog\PendoBlog\bin\Debug\netcoreapp2.0\PendoBlog.pdb
+C:\Projects\PendoBlog\PendoBlog\obj\Debug\netcoreapp2.0\PendoBlog.dll
+C:\Projects\PendoBlog\PendoBlog\obj\Debug\netcoreapp2.0\PendoBlog.pdb
