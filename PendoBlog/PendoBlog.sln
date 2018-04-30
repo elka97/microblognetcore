@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PendoBlog", "PendoBlog\PendoBlog.csproj", "{AFD8E1B0-F8DB-428C-A95B-FC697EFF1C26}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{EE27233F-BA33-4D73-BE95-CD6169D2C5BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AFD8E1B0-F8DB-428C-A95B-FC697EFF1C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFD8E1B0-F8DB-428C-A95B-FC697EFF1C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFD8E1B0-F8DB-428C-A95B-FC697EFF1C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE27233F-BA33-4D73-BE95-CD6169D2C5BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE27233F-BA33-4D73-BE95-CD6169D2C5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE27233F-BA33-4D73-BE95-CD6169D2C5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE27233F-BA33-4D73-BE95-CD6169D2C5BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

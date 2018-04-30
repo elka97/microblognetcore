@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  pendoblog:
+    image: pendoblog
+    build:
+      context: .
+      dockerfile: PendoBlog/Dockerfile

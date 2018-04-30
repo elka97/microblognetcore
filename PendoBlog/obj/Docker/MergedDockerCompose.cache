@@ -1,0 +1,11 @@
+services:
+  pendoblog:
+    build:
+      context: C:\Projects\PendoBlog
+      dockerfile: PendoBlog/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: pendoblog
+    ports:
+    - 80/tcp
+version: '3.0'

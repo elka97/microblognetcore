@@ -56,4 +56,11 @@ CREATE VIEW viewTopPosts AS
 		group by v.[PostId] ) as v on v.PostID = p.PostId;	
 GO
 
---alter table [dbo].[PostVote] add constraint [FK_PostVote_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([UserId]) 
+
+select * from [dbo].[User];
+
+select * from [dbo].[Post];
+
+select * from [dbo].[PostVote];
+
+SELECT * from viewTopPosts p;

@@ -5,30 +5,28 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using PendoBlog.Models;
 
-namespace PendoBlog
-{
+namespace PendoBlog {
     using Swashbuckle.AspNetCore.Swagger;
     //  using PendoBlog.Models;
 
-    public class Startup
-    {
-        public Startup(IConfiguration configuration)
-        {
+    public class Startup {
+        public Startup(IConfiguration configuration) {
             Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-           services.AddMvc();
+        public void ConfigureServices(IServiceCollection services) {
+            services.AddMvc();
 
             //Scaffold-DbContext "Server=ELINAR-LAP-IL;Initial Catalog=MicroBlogPendo;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
-            var connection = @"Server=ELINAR-LAP-IL;Initial Catalog=MicroBlogPendo;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-            services.AddDbContext<MicroBlogPendoContext>(options => options.UseSqlServer(connection));
+            //  var connection = @"Server=ELINAR-LAP-IL;Initial Catalog=MicroBlogPendo;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            //  services.AddDbContext<MicroBlogPendoContext>(options => options.UseSqlServer(connection));
+            //services.AddDbContext<MicroBlogPendoContext>(options => options.UseSqlServer());
 
-            services.AddMvc();
+            services.AddDbContext<MicroBlogPendoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new Info {
                     Version = "v1",
@@ -41,22 +39,20 @@ namespace PendoBlog
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env) {
+            if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             }
 
             app.UseMvc();
 
             app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
+
+            app.UseSwaggerUI(c => {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pendo micro blog API V1");
             });
 
-            
+
         }
 
     }
